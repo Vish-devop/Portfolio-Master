@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gender And Age Detection</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/gender and age detection.jpg">
+		</div>
+        <hr>
+        <div class="host">
+			<a target="_blank" href="#">Kindly click on link for geeting real-time project experience</a>
+		</div>
+        <hr>
+		
+		<h3>Gender And Age Detection</h3>
+
+		<h5>Objective:</h5>
+        <p>To build a gender and age detector that can approximately guess the gender and age of the person (face) in a picture or through webcam.</p>
+        <br>
+        <h5>About the Project:</h5>
+        <p>In this Python Project, I had used Deep Learning to accurately identify the gender and age of a person from a single image of a face. I used the models trained by Tal Hassner and Gil Levi. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, I made this a classification problem instead of making it one of regression.</p>
+        <br>
+        <h5>Addtional Python Libraries Required:</h5>
+        <ul>
+            <li>1. OpenCV</li>
+            <li>2. Argparse</li>
+        </ul>
+        <br>
+        <h5>The Contents of this project:</h5>
+        <ul>
+            <li>1.Opencv_face_detector.pbtxt</li>
+            <li>2.Opencv_face_detector_uint8.pb</li>
+            <li>3.Age_deploy.prototxt</li>
+            <li>4.Age_net.caffemodel</li>
+            <li>5.Gender_deploy.prototxt</li>
+            <li>6.Gender_net.caffemodel</li>
+            <li>7.A few pictures to try the project on</li>
+            <li>8.Detect.py</li>
+        </ul>
+        <p>For face detection, we have a .pb file- this is a protobuf file (protocol buffer); it holds the graph definition and the trained weights of the model. We can use this to run the trained model. And while a .pb file holds the protobuf in binary format, one with the .pbtxt extension holds it in text format. These are TensorFlow files. For age and gender, the .prototxt files describe the network configuration and the .caffemodel file defines the internal states of the parameters of the layers.</p>
+
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- ML Algorithms</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>

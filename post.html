@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Aggregator</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+		
+
+		<div class="img-container">
+			<img src="images/news-aggregator.png">
+		</div>
+		<hr>
+		<div class="host">
+			<a target="_blank" href="#">Kindly click on link for geeting real-time project experience</a>
+		</div>
+		<hr>
+		
+		<h3>News Aggregator</h3>
+
+		<h5>Description</h5>
+		<p>News aggregator is a Django project to scrape a news website using Beautiful soup and request module and hence combination of web crawlers and web applications. Both of these technologies have their implementation in Python.</p>
+
+		<h5>Features</h5>
+		<p>Our News aggregator works in 3-steps:</p>
+		<ul>
+			<li>1.It scrapes the news website for the articles.In this Django project, we are scraping a website 'www.theonion.com'
+				<p>(We have scraped news articles from 'latest' section of 'www.theonion.com' for demonstration)</p>
+			</li>
+			<li>2.Then it stores the article’s images, links, and title.</li>
+			<li>3.The stored objects in the database are served to the client. The client gets information in a nice template by clicking the 'Load news' button</li>
+
+		</ul>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django + Django REST Framework</li>
+			<li>- React JS</li>
+			<li>- Postgres</li>
+			<li>- AWS (S3 & RDS)</li>
+			<li>- Zingcharts - Trending & graphing test results</li>
+			<li>- Google Maps API</li>
+			<li>- XML2PDF - PDF generator</li>
+		</ul>
+
+		<h5>Tech Stack</h5>
+		<ol type="I">
+			<li>Python</li>
+			<li>Beautiful Soup</li>
+			<li>Django</li>
+			<li>Sqlite3</li>
+			<li>HTML,CSS</li>
+			<li>CSS-Bootstrap</li>
+		</ol>
+
+	</div>
+
+</body>
+</html>

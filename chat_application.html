@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Application</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/chat-app1.gif">
+		</div>
+        <hr>
+        <div class="host">
+			<a target="_blank" href="#">Kindly click on link for geeting real-time project experience</a>
+		</div>
+        <hr>
+		
+		<h3>Chat Application</h3>
+
+		<p>This was a project I started back in november 2021. I was the sole creator/developer for this project before I was able to hire help.
+		<br>
+		<br>
+		A small functional person-to-person message center application built using Django. It has a REST API and uses WebSockets to notify clients of new messages and avoid polling.
+		<br>
+		</p>
+        <h5>
+            Architecture
+        </h5>
+        <ul type="round">
+            <li>- When a user logs in, the frontend downloads the user list and opens a Websocket connection to the server (notifications channel).
+            </li>
+            <li>- When a user selects another user to chat, the frontend downloads the latest 15 messages (see settings) they've exchanged.</li>
+            <li>- When a user sends a message, the frontend sends a POST to the REST API, then Django saves the message and notifies the users involved using the Websocket connection (sends the new message ID).</li>
+            <li>- When the frontend receives a new message notification (with the message ID), it performs a GET query to the API to download the received message.</li>
+        </ul>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django + Django REST Framework</li>
+			<li>- JavaScript</li>
+			<li>- HTML/CSS</li>
+		</ul>
+
+
+		<h5> Chat Application</h5>
+		<div class="img-container">
+			<img src="images/chat-app1.gif">
+		</div>
+
+		
+		</div>
+
+        <h5>Assumptions</h5>
+        <p>Because of time constraints this project lacks of:</p>
+        <ul>
+            <li>- User Sign-In / Forgot Password</li>
+            <li>- User Selector Pagination</li>
+            <li>- Good Test Coverage</li>
+            <li>- Better Comments / Documentation Strings</li>
+            <li>- Frontend Tests</li>
+            <li>- Modern Frontend Framework (like React)</li>
+            <li>- Frontend Package (automatic lintin, building and minification)</li>
+            <li> -Proper UX / UI design (looks plain bootstrap)</li>
+            
+        </ul>     
+
+	</div>
+
+</body>
+</html>
